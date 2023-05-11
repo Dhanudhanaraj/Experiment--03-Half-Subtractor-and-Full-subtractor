@@ -60,8 +60,8 @@ endmodule
 module fullsub(A,B,C,Difference,Borrow);
 input A,B,C;
 output Difference,Borrow;
-assign Difference = (~A &(B ^ C) | (B & C));
-assign Borrow = ( A^B^C);
+assign Difference = ( A^B^C);
+assign Borrow = (~A &(B ^ C) | (B & C));
 endmodule
 ```
  
